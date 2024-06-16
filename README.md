@@ -1,46 +1,74 @@
-# Getting Started with Create React App
+# Simple Chat Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple chat application built with React for the frontend and Node.js, Express, and Socket.io for the backend.
+The initial version of this project was taken from a YouTube for learning nodejs, but I've made several improvements and
+optimizations.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Frontend**:
+    - Built with React using hooks such as `useEffect`, `useState`, `useReducer` (chosen instead of adding Redux to the
+      project for simplicity), and `useRef`.
+    - Fully typed with TypeScript for better maintainability and readability.
+    - Action creators for the reducer to manage state more effectively.
 
-### `npm start`
+- **Backend**:
+    - Node.js with Express for handling HTTP requests.
+    - Socket.io for real-time communication between the client and server.
+    - Minor optimizations and improvements to enhance functionality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Enhancements Made
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. **Message Sending Optimization**:
+    - Improved message sending logic and handling of the Enter key for new lines and message submission.
 
-### `npm test`
+2. **TypeScript Integration**:
+    - Converted the entire project to TypeScript.
+    - Defined custom types and action creators for better type safety and code clarity.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Project Decomposition**:
+    - Refactored and decomposed the codebase for better structure and maintainability.
 
-### `npm run build`
+4. **Backend Improvements**:
+    - Made slight optimizations to the backend code for better performance and readability.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js installed on your machine.
+- A package manager such as npm or yarn.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```
+   git clone https://github.com/your-username/simple-chat.git
+   cd simple-chat-app
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. **Install dependencies**:
 
-## Learn More
+   ```
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Run the server**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```
+   npm run server
+   ```
+
+4. **Run the app**:
+
+   ```
+   npm start
+   ```
+
+### Acknowledgments
+
+Original tutorial and inspiration from YouTube.
+Special thanks to the creators of the libraries and tools used in this project.
